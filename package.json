@@ -1,22 +1,29 @@
 {
   "name": "recorder-cli",
   "version": "1.0.0",
-  "description": "CLI tool to interact with Google Recorder recordings via direct API calls",
-  "main": "test-auth-flow.js",
+  "description": "CLI tool for downloading transcripts and audio from Google Recorder",
+  "main": "cli.js",
+  "bin": {
+    "recorder-cli": "cli.js"
+  },
   "scripts": {
-    "start": "node test-auth-flow.js",
-    "test": "node test-auth-flow.js"
+    "start": "node cli.js",
+    "auth": "node cli.js auth",
+    "list": "node cli.js list",
+    "download": "node cli.js download"
   },
   "keywords": [
     "google-recorder",
     "pixel-recorder",
     "grpc-web",
     "cli",
-    "transcript"
+    "transcript",
+    "audio"
   ],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "commander": "^14.0.3",
     "puppeteer-core": "^24.37.4"
   }
 }

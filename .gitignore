@@ -19,3 +19,6 @@ Desktop.ini
 
 # Claude Code local settings
 .claude/settings.local.json
+
+# Reference repo (for analysis only)
+ref/

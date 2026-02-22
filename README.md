@@ -241,6 +241,10 @@ Make sure recordings are synced to the cloud at [recorder.google.com](https://re
 ### "Invalid recording ID format"
 IDs must be UUIDs. Use `node cli.js list` to find valid IDs.
 
+## Acknowledgments
+
+Inspired by [google-recorder-cli](https://github.com/dylantmoore/google-recorder-cli) by Dylan Moore, a TypeScript implementation using Playwright for browser auth and `better-sqlite3` for direct Chrome cookie extraction. This project reimplements the concept in plain JavaScript with `puppeteer-core`, adds file-based auth persistence, and targets a different goal: an automated pipeline for Hebrew transcription and summarization via Gemini.
+
 ## License
 
 ISC
